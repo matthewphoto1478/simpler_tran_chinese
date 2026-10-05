@@ -1,0 +1,10 @@
+[
+ "You just deployed a new version of the API. Some users report 500 errors.",
+ "What is Docker and how does it differ from a VM?",
+ "Explain Kubernetes in simple terms.",
+ "What is the difference between SQL and NoSQL databases?",
+ "Why is my database slow after adding an index?",
+ "How does HTTPS encryption work?",
+ "What is the difference between authentication and authorization?",
+ "Explain the concept of CI/CD to a non-technical person."
+]

@@ -1,0 +1,34 @@
+[
+ {
+ "task": "Write a README introduction for sqlpipe, a tool that copies Postgres tables to S3 as Parquet files. Around 100 words.",
+ "scenario": "descriptive"
+ },
+ {
+ "task": "Write a Getting Started section for sqlpipe with three steps. Each step should be one sentence.",
+ "scenario": "procedural"
+ },
+ {
+ "task": "Write a Troubleshooting section for sqlpipe covering connection timeouts and permission errors. Around 150 words.",
+ "scenario": "procedural"
+ },
+ {
+ "task": "Write an error message for when sqlpipe cannot connect to the database.",
+ "scenario": "error"
+ },
+ {
+ "task": "Write an incident report for an API outage that lasted 30 minutes. Include timeline and resolution.",
+ "scenario": "incident"
+ },
+ {
+ "task": "Write a runbook step for restarting a service after a failed deployment.",
+ "scenario": "runbook"
+ },
+ {
+ "task": "Write a commit message for a change that adds rate limiting to an API endpoint.",
+ "scenario": "commit"
+ },
+ {
+ "task": "Write a release note entry for a breaking change in an API endpoint.",
+ "scenario": "release_note"
+ }
+]

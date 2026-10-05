@@ -1,0 +1,14 @@
+{
+ "approved": [
+ {"word": "claude-fable-5-1", "pos": "n", "meaning": "AI model", "alt": []},
+ {"word": "claude-fable-5", "pos": "n", "meaning": "AI model", "alt": []},
+ {"word": "claude-opus-5", "pos": "n", "meaning": "AI model", "alt": []},
+ {"word": "claude-opus-4-8", "pos": "n", "meaning": "AI model", "alt": []},
+ {"word": "claude-opus-4-7", "pos": "n", "meaning": "AI model", "alt": []},
+ {"word": "claude-opus-4-6", "pos": "n", "meaning": "AI model", "alt": []},
+ {"word": "claude-opus-4-5-20251101", "pos": "n", "meaning": "AI model", "alt": []},
+ {"word": "claude-sonnet-5", "pos": "n", "meaning": "AI model", "alt": []},
+ {"word": "claude-sonnet-4-6", "pos": "n", "meaning": "AI model", "alt": []}
+ ],
+ "not_approved": []
+}
