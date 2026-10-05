@@ -34,7 +34,7 @@
  "hooks": [
  {
  "type": "command",
- "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/src/hooks/lint_hook.py\"",
+ "command": "sh \"${CLAUDE_PLUGIN_ROOT}/src/hooks/run-python.sh\" \"${CLAUDE_PLUGIN_ROOT}/src/hooks/lint_hook.py\"",
  "timeout": 10,
  "statusMessage": "Simple English: checking the file..."
  }
@@ -46,7 +46,7 @@
  "hooks": [
  {
  "type": "command",
- "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/src/hooks/lint_hook.py\"",
+ "command": "sh \"${CLAUDE_PLUGIN_ROOT}/src/hooks/run-python.sh\" \"${CLAUDE_PLUGIN_ROOT}/src/hooks/lint_hook.py\"",
  "timeout": 10
  }
  ]
