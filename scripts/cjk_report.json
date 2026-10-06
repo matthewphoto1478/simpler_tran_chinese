@@ -1,0 +1,329 @@
+{
+  "files_analyzed": 36,
+  "files_with_cjk": 31,
+  "total_cjk_chars": 19022,
+  "total_changed_by_s2t": 7190,
+  "total_changed_by_t2s": 0,
+  "s2t_pct": 37.798,
+  "t2s_pct": 0.0,
+  "files_by_verdict": {
+    "Traditional": 31,
+    "no CJK": 5
+  },
+  "files": [
+    {
+      "file": ".agents/plugins/README.md",
+      "cjk": 29,
+      "s2t_changed": 8,
+      "t2s_changed": 0,
+      "s2t_pct": 27.59,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": ".claude-plugin/marketplace.json",
+      "cjk": 111,
+      "s2t_changed": 43,
+      "t2s_changed": 0,
+      "s2t_pct": 38.74,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": ".claude-plugin/plugin.json",
+      "cjk": 72,
+      "s2t_changed": 28,
+      "t2s_changed": 0,
+      "s2t_pct": 38.89,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": ".codex-plugin/hooks.json",
+      "cjk": 0,
+      "s2t_changed": 0,
+      "t2s_changed": 0,
+      "verdict": "no CJK"
+    },
+    {
+      "file": ".codex-plugin/plugin.json",
+      "cjk": 202,
+      "s2t_changed": 81,
+      "t2s_changed": 0,
+      "s2t_pct": 40.1,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "CHANGELOG.md",
+      "cjk": 1090,
+      "s2t_changed": 365,
+      "t2s_changed": 0,
+      "s2t_pct": 33.49,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "evals/pressure-tests.md",
+      "cjk": 713,
+      "s2t_changed": 298,
+      "t2s_changed": 0,
+      "s2t_pct": 41.8,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "evals/reply_scenarios.json",
+      "cjk": 0,
+      "s2t_changed": 0,
+      "t2s_changed": 0,
+      "verdict": "no CJK"
+    },
+    {
+      "file": "evals/results/openai-2026-09-01/README.md",
+      "cjk": 19,
+      "s2t_changed": 9,
+      "t2s_changed": 0,
+      "s2t_pct": 47.37,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "evals/results/opencode-2026-09-01/README.md",
+      "cjk": 21,
+      "s2t_changed": 9,
+      "t2s_changed": 0,
+      "s2t_pct": 42.86,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "evals/results/opencode-2026-09-01-plain/README.md",
+      "cjk": 19,
+      "s2t_changed": 9,
+      "t2s_changed": 0,
+      "s2t_pct": 47.37,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "evals/results/pi-2026-07-31/README.md",
+      "cjk": 19,
+      "s2t_changed": 9,
+      "t2s_changed": 0,
+      "s2t_pct": 47.37,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "evals/results/pivot-2026-09-01/README.md",
+      "cjk": 19,
+      "s2t_changed": 9,
+      "t2s_changed": 0,
+      "s2t_pct": 47.37,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "evals/results/raw/README.md",
+      "cjk": 42,
+      "s2t_changed": 17,
+      "t2s_changed": 0,
+      "s2t_pct": 40.48,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "evals/results/raw-superseded/README.md",
+      "cjk": 25,
+      "s2t_changed": 9,
+      "t2s_changed": 0,
+      "s2t_pct": 36.0,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "evals/results/rebuild-2026-09-02/README.md",
+      "cjk": 21,
+      "s2t_changed": 9,
+      "t2s_changed": 0,
+      "s2t_pct": 42.86,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "evals/results/results.json",
+      "cjk": 0,
+      "s2t_changed": 0,
+      "t2s_changed": 0,
+      "verdict": "no CJK"
+    },
+    {
+      "file": "evals/results/RESULTS.md",
+      "cjk": 497,
+      "s2t_changed": 166,
+      "t2s_changed": 0,
+      "s2t_pct": 33.4,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "evals/results/why-useless-2026-09-02/README.md",
+      "cjk": 22,
+      "s2t_changed": 9,
+      "t2s_changed": 0,
+      "s2t_pct": 40.91,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "evals/results/WHY-USELESS-2026-09-02.md",
+      "cjk": 433,
+      "s2t_changed": 169,
+      "t2s_changed": 0,
+      "s2t_pct": 39.03,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "evals/scenarios.json",
+      "cjk": 0,
+      "s2t_changed": 0,
+      "t2s_changed": 0,
+      "verdict": "no CJK"
+    },
+    {
+      "file": "examples/before-after.md",
+      "cjk": 164,
+      "s2t_changed": 61,
+      "t2s_changed": 0,
+      "s2t_pct": 37.2,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "output-styles/simple-english.md",
+      "cjk": 978,
+      "s2t_changed": 377,
+      "t2s_changed": 0,
+      "s2t_pct": 38.55,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "prompts/system-prompt.md",
+      "cjk": 1220,
+      "s2t_changed": 481,
+      "t2s_changed": 0,
+      "s2t_pct": 39.43,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "README.md",
+      "cjk": 1970,
+      "s2t_changed": 778,
+      "t2s_changed": 0,
+      "s2t_pct": 39.49,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "skills/simple-english/references/cn-tech-examples.md",
+      "cjk": 2072,
+      "s2t_changed": 783,
+      "t2s_changed": 0,
+      "s2t_pct": 37.79,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "skills/simple-english/references/cn-tech-spec.md",
+      "cjk": 2381,
+      "s2t_changed": 914,
+      "t2s_changed": 0,
+      "s2t_pct": 38.39,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "skills/simple-english/references/rule-catalog.md",
+      "cjk": 1668,
+      "s2t_changed": 631,
+      "t2s_changed": 0,
+      "s2t_pct": 37.83,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "skills/simple-english/references/strict-vocabulary.md",
+      "cjk": 817,
+      "s2t_changed": 287,
+      "t2s_changed": 0,
+      "s2t_pct": 35.13,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "skills/simple-english/references/use-cases.md",
+      "cjk": 662,
+      "s2t_changed": 228,
+      "t2s_changed": 0,
+      "s2t_pct": 34.44,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "skills/simple-english/references/word-swaps.md",
+      "cjk": 162,
+      "s2t_changed": 63,
+      "t2s_changed": 0,
+      "s2t_pct": 38.89,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "skills/simple-english/SKILL.md",
+      "cjk": 2393,
+      "s2t_changed": 946,
+      "t2s_changed": 0,
+      "s2t_pct": 39.53,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "src/hooks/package.json",
+      "cjk": 0,
+      "s2t_changed": 0,
+      "t2s_changed": 0,
+      "verdict": "no CJK"
+    },
+    {
+      "file": "src/hooks/README.md",
+      "cjk": 624,
+      "s2t_changed": 228,
+      "t2s_changed": 0,
+      "s2t_pct": 36.54,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "tools/ste-dictionary/COMPRESSION-RESEARCH.md",
+      "cjk": 258,
+      "s2t_changed": 69,
+      "t2s_changed": 0,
+      "s2t_pct": 26.74,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    },
+    {
+      "file": "tools/ste-dictionary/README.md",
+      "cjk": 299,
+      "s2t_changed": 97,
+      "t2s_changed": 0,
+      "s2t_pct": 32.44,
+      "t2s_pct": 0.0,
+      "verdict": "Traditional"
+    }
+  ]
+}

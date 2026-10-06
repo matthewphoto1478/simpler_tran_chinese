@@ -1,0 +1,39 @@
+=== verdict rows (CJK-bearing files) ===
+                     Traditional  cjk=   29  s2t_chg=    8  t2s_chg=    0  s2t_pct=27.59%  t2s_pct=  0.0%   .agents/plugins/README.md
+                     Traditional  cjk=  111  s2t_chg=   43  t2s_chg=    0  s2t_pct=38.74%  t2s_pct=  0.0%   .claude-plugin/marketplace.json
+                     Traditional  cjk=   72  s2t_chg=   28  t2s_chg=    0  s2t_pct=38.89%  t2s_pct=  0.0%   .claude-plugin/plugin.json
+                     Traditional  cjk=  202  s2t_chg=   81  t2s_chg=    0  s2t_pct= 40.1%  t2s_pct=  0.0%   .codex-plugin/plugin.json
+                     Traditional  cjk= 1090  s2t_chg=  365  t2s_chg=    0  s2t_pct=33.49%  t2s_pct=  0.0%   CHANGELOG.md
+                     Traditional  cjk=  713  s2t_chg=  298  t2s_chg=    0  s2t_pct= 41.8%  t2s_pct=  0.0%   evals/pressure-tests.md
+                     Traditional  cjk=   19  s2t_chg=    9  t2s_chg=    0  s2t_pct=47.37%  t2s_pct=  0.0%   evals/results/openai-2026-09-01/README.md
+                     Traditional  cjk=   21  s2t_chg=    9  t2s_chg=    0  s2t_pct=42.86%  t2s_pct=  0.0%   evals/results/opencode-2026-09-01/README.md
+                     Traditional  cjk=   19  s2t_chg=    9  t2s_chg=    0  s2t_pct=47.37%  t2s_pct=  0.0%   evals/results/opencode-2026-09-01-plain/README.md
+                     Traditional  cjk=   19  s2t_chg=    9  t2s_chg=    0  s2t_pct=47.37%  t2s_pct=  0.0%   evals/results/pi-2026-07-31/README.md
+                     Traditional  cjk=   19  s2t_chg=    9  t2s_chg=    0  s2t_pct=47.37%  t2s_pct=  0.0%   evals/results/pivot-2026-09-01/README.md
+                     Traditional  cjk=   42  s2t_chg=   17  t2s_chg=    0  s2t_pct=40.48%  t2s_pct=  0.0%   evals/results/raw/README.md
+                     Traditional  cjk=   25  s2t_chg=    9  t2s_chg=    0  s2t_pct= 36.0%  t2s_pct=  0.0%   evals/results/raw-superseded/README.md
+                     Traditional  cjk=   21  s2t_chg=    9  t2s_chg=    0  s2t_pct=42.86%  t2s_pct=  0.0%   evals/results/rebuild-2026-09-02/README.md
+                     Traditional  cjk=  497  s2t_chg=  166  t2s_chg=    0  s2t_pct= 33.4%  t2s_pct=  0.0%   evals/results/RESULTS.md
+                     Traditional  cjk=   22  s2t_chg=    9  t2s_chg=    0  s2t_pct=40.91%  t2s_pct=  0.0%   evals/results/why-useless-2026-09-02/README.md
+                     Traditional  cjk=  433  s2t_chg=  169  t2s_chg=    0  s2t_pct=39.03%  t2s_pct=  0.0%   evals/results/WHY-USELESS-2026-09-02.md
+                     Traditional  cjk=  164  s2t_chg=   61  t2s_chg=    0  s2t_pct= 37.2%  t2s_pct=  0.0%   examples/before-after.md
+                     Traditional  cjk=  978  s2t_chg=  377  t2s_chg=    0  s2t_pct=38.55%  t2s_pct=  0.0%   output-styles/simple-english.md
+                     Traditional  cjk= 1220  s2t_chg=  481  t2s_chg=    0  s2t_pct=39.43%  t2s_pct=  0.0%   prompts/system-prompt.md
+                     Traditional  cjk= 1970  s2t_chg=  778  t2s_chg=    0  s2t_pct=39.49%  t2s_pct=  0.0%   README.md
+                     Traditional  cjk= 2072  s2t_chg=  783  t2s_chg=    0  s2t_pct=37.79%  t2s_pct=  0.0%   skills/simple-english/references/cn-tech-examples.md
+                     Traditional  cjk= 2381  s2t_chg=  914  t2s_chg=    0  s2t_pct=38.39%  t2s_pct=  0.0%   skills/simple-english/references/cn-tech-spec.md
+                     Traditional  cjk= 1668  s2t_chg=  631  t2s_chg=    0  s2t_pct=37.83%  t2s_pct=  0.0%   skills/simple-english/references/rule-catalog.md
+                     Traditional  cjk=  817  s2t_chg=  287  t2s_chg=    0  s2t_pct=35.13%  t2s_pct=  0.0%   skills/simple-english/references/strict-vocabulary.md
+                     Traditional  cjk=  662  s2t_chg=  228  t2s_chg=    0  s2t_pct=34.44%  t2s_pct=  0.0%   skills/simple-english/references/use-cases.md
+                     Traditional  cjk=  162  s2t_chg=   63  t2s_chg=    0  s2t_pct=38.89%  t2s_pct=  0.0%   skills/simple-english/references/word-swaps.md
+                     Traditional  cjk= 2393  s2t_chg=  946  t2s_chg=    0  s2t_pct=39.53%  t2s_pct=  0.0%   skills/simple-english/SKILL.md
+                     Traditional  cjk=  624  s2t_chg=  228  t2s_chg=    0  s2t_pct=36.54%  t2s_pct=  0.0%   src/hooks/README.md
+                     Traditional  cjk=  258  s2t_chg=   69  t2s_chg=    0  s2t_pct=26.74%  t2s_pct=  0.0%   tools/ste-dictionary/COMPRESSION-RESEARCH.md
+                     Traditional  cjk=  299  s2t_chg=   97  t2s_chg=    0  s2t_pct=32.44%  t2s_pct=  0.0%   tools/ste-dictionary/README.md
+
+=== no-CJK files ===
+   .codex-plugin/hooks.json
+   evals/reply_scenarios.json
+   evals/results/results.json
+   evals/scenarios.json
+   src/hooks/package.json
