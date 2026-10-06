@@ -140,6 +140,8 @@ Linter 历史：9 个 Claude 模型（144 次生成）的 linter 违规减少 81
 
 欢迎提交 Issue 提问和报告 Bug。Pull request 欢迎。改变已发布数字的更改必须附带原始文件，且 `python3 evals/check_numbers.py` 必须通过。在推送前运行 `python3 evals/ste_lint.py --self-test`。在 PR 中说明 Agent 是否写了代码，不要添加归属 trailers。
 
+推送前运行 `bash scripts/check.sh`，跑过本仓库的七个本地检查（与原 CI 一致）。CI 流程文件未随仓库发布，因为 GitHub 要求 Personal Access Token 具备 `workflow` 作用域才能推送。
+
 ## 许可证
 
 MIT 许可证。本仓库为教学目的复述规则，不复制任何规范文本或词典内容。
