@@ -1,7 +1,7 @@
 {
  "name": "simple-english",
  "version": "2.2.0",
- "description": "按中文技术表达规范（C01–C24）撰写或改写中文技术文本：保留事实与逻辑边界，区分事实/推断/未知，不补造信息，一个概念一个术语，指明执行者，条件先于动作，保护机器可读内容。",
+ "description": "按中文技術表達規範（C01–C24）撰寫或改寫中文技術文字：保留事實與邏輯邊界，區分事實/推斷/未知，不補造資訊，一個概念一個術語，指明執行者，條件先於動作，保護機器可讀內容。",
  "author": {
  "name": "TranChinese"
  },
@@ -18,8 +18,8 @@
  "hooks": "./.codex-plugin/hooks.json",
 "interface": {
    "displayName": "Simple English 中文版",
-   "shortDescription": "按中文技术表达规范（C01–C24）撰写清晰的中文技术文档与回复。",
-   "longDescription": "为文档、接口说明、操作步骤、排障报告与聊天回复加载中文技术表达规范 C01–C24，让读者准确理解信息、判断适用条件并正确操作。可选英文模式（ASD-STE100）用于英文写作。",
+   "shortDescription": "按中文技術表達規範（C01–C24）撰寫清晰的中文技術文件與回覆。",
+   "longDescription": "為文件、介面說明、操作步驟、排障報告與聊天回覆載入中文技術表達規範 C01–C24，讓讀者準確理解資訊、判斷適用條件並正確操作。可選英文模式（ASD-STE100）用於英文寫作。",
    "developerName": "TranChinese",
    "category": "Productivity",
    "capabilities": [
@@ -27,9 +27,9 @@
    ],
    "websiteURL": "https://github.com/TranChinese/SimpleEnglish-zh",
    "defaultPrompt": [
-     "按中文技术表达规范改写这段技术文本。",
-     "用 C01–C24 规则写这份操作步骤。",
-     "检查这份文档是否违反中文技术表达规范。"
+     "按中文技術表達規範改寫這段技術文字。",
+     "用 C01–C24 規則寫這份操作步驟。",
+     "檢查這份文件是否違反中文技術表達規範。"
    ],
    "brandColor": "#2563EB"
  }

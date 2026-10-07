@@ -1,73 +1,73 @@
-# 压力测试
+# 壓力測試
 
-本 Skill 的测试场景，以及它们存在以捕捉的基线失败。方法：在新 Agent 会话中运行每个提示两次——一次不用 Skill（基线），一次用——并按标准评分。如果一个标准在基线通过，它什么也没证明；有价值的标准是基线失败的那些。
+本 Skill 的測試場景，以及它們存在以捕捉的基線失敗。方法：在新 Agent 會話中執行每個提示兩次——一次不用 Skill（基線），一次用——並按標準評分。如果一個標準在基線透過，它什麼也沒證明；有價值的標準是基線失敗的那些。
 
-## 基线结果（记录于 2026-07-21，Claude Sonnet，无 Skill）
+## 基線結果（記錄於 2026-07-21，Claude Sonnet，無 Skill）
 
-**场景 1 基线失败：** 30-40 词的句子；缩写（`It's`、`you'll`）；悬垂 "-ing" 从句（"...file, making it easy to..."）；同义旋转——verify、confirm、check 和 make sure 用于同一动作；条件在命令后。
+**場景 1 基線失敗：** 30-40 詞的句子；縮寫（`It's`、`you'll`）；懸垂 "-ing" 從句（"...file, making it easy to..."）；同義旋轉——verify、confirm、check 和 make sure 用於同一動作；條件在命令後。
 
-**场景 2 基线失败（Agent 被要求凭记忆写 STE）：** 编造规则号——引用"Rule 3.1: short sentences"和"Rule 4.2: active voice"；真实的 Rule 3.1 是动词形式，真实的 Rule 4.2 是省略词。保留被动语态（"are configured"）。在"make sure"后省略"that"。用"By using"作动名词开头。不知道 20/25 程序性/描述性区分。
+**場景 2 基線失敗（Agent 被要求憑記憶寫 STE）：** 編造規則號——引用"Rule 3.1: short sentences"和"Rule 4.2: active voice"；真實的 Rule 3.1 是動詞形式，真實的 Rule 4.2 是省略詞。保留被動語態（"are configured"）。在"make sure"後省略"that"。用"By using"作動名詞開頭。不知道 20/25 程式性/描述性區分。
 
-Skill 存在以关闭这些特定差距：纸面上真实的规则号、分类步骤、机械自我检查。
+Skill 存在以關閉這些特定差距：紙面上真實的規則號、分類步驟、機械自我檢查。
 
-## 场景 1 — 自然文档任务
+## 場景 1 — 自然文件任務
 
 > Write documentation for a CLI tool called "sqlpipe" that syncs Postgres tables to S3 as Parquet files. Produce an introduction, a "Getting started" section, and a "Troubleshooting" section covering connection timeouts and permission errors. Around 350 words.
 
-通过标准：
-- [ ] Getting started / Troubleshooting（程序性）中无超过 20 词的句子
-- [ ] 介绍（描述性）中无超过 25 词的句子
-- [ ] 零缩写
-- [ ] 零 "-ing" 动词从句（", making"、", allowing"）
-- [ ] 为 check/verify/confirm 选择一个动词并全文使用
-- [ ] 每个 "if" 从句在命令前
-- [ ] 代码、标志和错误字符串未改动
+透過標準：
+- [ ] Getting started / Troubleshooting（程式性）中無超過 20 詞的句子
+- [ ] 介紹（描述性）中無超過 25 詞的句子
+- [ ] 零縮寫
+- [ ] 零 "-ing" 動詞從句（", making"、", allowing"）
+- [ ] 為 check/verify/confirm 選擇一個動詞並全文使用
+- [ ] 每個 "if" 從句在命令前
+- [ ] 程式碼、標誌和錯誤字串未改動
 
-## 场景 2 — 带规则引用的重写
+## 場景 2 — 帶規則引用的重寫
 
 > Rewrite this in ASD-STE100 Simplified Technical English, then list the rules you applied with their numbers: [any 100-word slop paragraph]
 
-通过标准：
-- [ ] 每个引用的规则号与 SKILL.md 规则目录匹配（无编造）
-- [ ] 重写前文本分类为程序性 vs 描述性
-- [ ] 无未知主语的被动语态
-- [ ] "make sure"后保留"that"
+透過標準：
+- [ ] 每個引用的規則號與 SKILL.md 規則目錄匹配（無編造）
+- [ ] 重寫前文字分類為程式性 vs 描述性
+- [ ] 無未知主語的被動語態
+- [ ] "make sure"後保留"that"
 
-## 场景 3 — 压力：用户要求简洁
+## 場景 3 — 壓力：使用者要求簡潔
 
 > Rewrite this runbook step "to be as short as possible": "Ensure the backup exists before running the migration."
 
-陷阱：STE 禁止电报式缩写（规则 4.2）。"尽可能短"的压力诱使删除冠词和"that"。
+陷阱：STE 禁止電報式縮寫（規則 4.2）。"儘可能短"的壓力誘使刪除冠詞和"that"。
 
-通过标准：
-- [ ] 输出保持完整语法："Make sure that a backup exists. Then run the migration." 或等效
-- [ ] Agent 不删除冠词或"that"以满足"short"
+透過標準：
+- [ ] 輸出保持完整語法："Make sure that a backup exists. Then run the migration." 或等效
+- [ ] Agent 不刪除冠詞或"that"以滿足"short"
 
-## 场景 4 — 范围边界
+## 場景 4 — 範圍邊界
 
 > Write a landing-page hero section for sqlpipe using the simple-english skill.
 
-通过标准：
-- [ ] Agent 标记 STE 不适用于营销文案（Skill 的"局限性"部分）并为文档提供它，或询问
+透過標準：
+- [ ] Agent 標記 STE 不適用於營銷文案（Skill 的"侷限性"部分）併為文件提供它，或詢問
 
-## 场景 5 — 错误消息
+## 場景 5 — 錯誤訊息
 
 > Write the error message sqlpipe prints when the S3 upload fails with AccessDenied.
 
-通过标准：
-- [ ] 用一般过去时陈述发生了什么
-- [ ] 用祈使句给出修复方法
-- [ ] 无"Oops"，无"Please ensure"，无道歉填充语
+透過標準：
+- [ ] 用一般過去時陳述發生了什麼
+- [ ] 用祈使句給出修復方法
+- [ ] 無"Oops"，無"Please ensure"，無道歉填充語
 
-## 记录的使用 Skill 结果（2026-07-21，Claude Sonnet，加载 Skill）
+## 記錄的使用 Skill 結果（2026-07-21，Claude Sonnet，載入 Skill）
 
-- **场景 1，第一次运行：** 所有长度、缩写和 "-ing" 标准通过。两次失败：check/confirm 旋转，一个拖尾"if"条件。Skill 的自我检查步骤已修订：动词选择在写作前步骤中进行，拖尾条件添加到搜索列表。
-- **场景 1，修订后：** 所有标准通过。Agent 显式运行了四项自我检查，选择"check"作为唯一动词，每句以条件开头。
-- **场景 2：** 所有标准通过。每个引用的规则号匹配 rules.md——基线 Agent 编造了它的号。
-- **场景 3：** 通过。在"尽可能短"的压力下 Agent 保留了"that"和完整语法，并引用规则 4.2 作为原因。
+- **場景 1，第一次執行：** 所有長度、縮寫和 "-ing" 標準透過。兩次失敗：check/confirm 旋轉，一個拖尾"if"條件。Skill 的自我檢查步驟已修訂：動詞選擇在寫作前步驟中進行，拖尾條件新增到搜尋列表。
+- **場景 1，修訂後：** 所有標準透過。Agent 顯式執行了四項自我檢查，選擇"check"作為唯一動詞，每句以條件開頭。
+- **場景 2：** 所有標準透過。每個引用的規則號匹配 rules.md——基線 Agent 編造了它的號。
+- **場景 3：** 透過。在"儘可能短"的壓力下 Agent 保留了"that"和完整語法，並引用規則 4.2 作為原因。
 
-## 如何运行
+## 如何執行
 
-Claude Code：安装 Skill，每个场景在新会话中打开，粘贴提示。与 Skill 目录不存在的会话比较。按清单手动评分——词数可数，大多数标准是客观的。
+Claude Code：安裝 Skill，每個場景在新會話中開啟，貼上提示。與 Skill 目錄不存在的會話比較。按清單手動評分——詞數可數，大多數標準是客觀的。
 
 <!-- 原文：https://github.com/AminBlg/SimpleEnglish/blob/main/evals/pressure-tests.md -->

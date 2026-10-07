@@ -1,27 +1,27 @@
-# ASD-STE100 词表，在你的机器上生成
+# ASD-STE100 詞表，在你的機器上生成
 
-此目录包含提取器和词汇检查器。不包含词典内容。ASD-STE100 Issue 9 在第 2 页声明，未经 ASD 书面授权，不得以任何形式复制标准或其任何部分。因此仓库附带工具，你需要从自己的免费 PDF 副本生成词表。
+此目錄包含提取器和詞彙檢查器。不包含詞典內容。ASD-STE100 Issue 9 在第 2 頁宣告，未經 ASD 書面授權，不得以任何形式複製標準或其任何部分。因此倉庫附帶工具，你需要從自己的免費 PDF 副本生成詞表。
 
-## 生成词表
+## 生成詞表
 
-1. 在 asd-ste100.org/request.html 请求免费 PDF。
-2. 转换为文本：`pdftotext -layout ASD-STE100_ISSUE9.pdf ste9.txt`
-3. 解析词典：`python3 parse_dict.py ste9.txt`。这会写入 `dict.json`。
-4. 输出词表：`python3 emit.py .`。这会写入 `approved.txt`（841 行）和 `not-approved.tsv`（1,297 行）。
+1. 在 asd-ste100.org/request.html 請求免費 PDF。
+2. 轉換為文字：`pdftotext -layout ASD-STE100_ISSUE9.pdf ste9.txt`
+3. 解析詞典：`python3 parse_dict.py ste9.txt`。這會寫入 `dict.json`。
+4. 輸出詞表：`python3 emit.py .`。這會寫入 `approved.txt`（841 行）和 `not-approved.tsv`（1,297 行）。
 
-输出是确定性的。在 2026-09-04 两次文件逐字节匹配。所有四个生成的文件都在 `.gitignore` 中。不要提交它们。
+輸出是確定性的。在 2026-09-04 兩次檔案逐位元組匹配。所有四個生成的檔案都在 `.gitignore` 中。不要提交它們。
 
-## 检查词汇选择
+## 檢查詞彙選擇
 
-`evals/ste_lint.py` 测量机械规则。看不到词汇选择。此检查器读取 `not-approved.tsv` 并报告标准不批准的每个词，附有批准替代。它还将 `evals/slop.tsv` 中的 LLM-tell 词作为单独数字计数。
+`evals/ste_lint.py` 測量機械規則。看不到詞彙選擇。此檢查器讀取 `not-approved.tsv` 並報告標準不批准的每個詞，附有批准替代。它還將 `evals/slop.tsv` 中的 LLM-tell 詞作為單獨數字計數。
 
 ```bash
 python3 ste_dict_lint.py file.md
 python3 ste_dict_lint.py --self-test
 ```
 
-已知限制：匹配基于基本形式和简单变形，没有词性消歧。从此工具得到的数字比较通过同一版本的文本。它们不是合规裁定。
+已知限制：匹配基於基本形式和簡單變形，沒有詞性消歧。從此工具得到的數字比較透過同一版本的文字。它們不是合規裁定。
 
-`COMPRESSION-RESEARCH.md` 记录了为什么词表是纯文本而非符号表示：符号方案在所调查的研究中无法跨模型家族迁移。
+`COMPRESSION-RESEARCH.md` 記錄了為什麼詞表是純文字而非符號表示：符號方案在所調查的研究中無法跨模型家族遷移。
 
 <!-- 原文：https://github.com/AminBlg/SimpleEnglish/blob/main/tools/ste-dictionary/README.md -->

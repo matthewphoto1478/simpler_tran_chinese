@@ -1,29 +1,29 @@
 # Simple English 中文版
 
-让你的 AI 像中文技术作者一样思考：保留事实与逻辑边界，区分事实、推断与未知，不补造信息、命令、路径或恢复步骤，指明执行者，条件先于动作，保护机器可读内容。
+讓你的 AI 像中文技術作者一樣思考：保留事實與邏輯邊界，區分事實、推斷與未知，不補造資訊、命令、路徑或恢復步驟，指明執行者，條件先於動作，保護機器可讀內容。
 
-一个让 LLM 按中文技术表达规范（C01–C24）撰写或改写中文技术文档的 Agent Skill。中文是默认语域；当用户明确要求英文并提到 ASD-STE100、STE 时切换到英文 STE 词典。默认面向普通读者，需要时切换为严格的 STE 模式。
+一個讓 LLM 按中文技術表達規範（C01–C24）撰寫或改寫中文技術文件的 Agent Skill。中文是預設語域；當使用者明確要求英文並提到 ASD-STE100、STE 時切換到英文 STE 詞典。預設面向普通讀者，需要時切換為嚴格的 STE 模式。
 
-## 什么是 Simple English 中文版
+## 什麼是 Simple English 中文版
 
-Simple English 中文版是一个 Agent Skill，让 AI 助手（Claude Code、Cursor、VS Code Copilot、OpenAI Codex、Gemini CLI、Goose、OpenCode 等支持 Agent Skills 标准的工具）按 [中文技术表达规范（C01–C24）](skills/simple-english/references/cn-tech-spec.md) 撰写或改写中文技术文本。规则目标是让读者准确理解信息、判断适用条件，并在需要时正确操作：保留事实与逻辑边界，区分事实、推断与未知，不补造信息、命令、路径或恢复方法，一个概念一个术语，指明执行者、条件先于动作、保护机器可读内容。
+Simple English 中文版是一個 Agent Skill，讓 AI 助手（Claude Code、Cursor、VS Code Copilot、OpenAI Codex、Gemini CLI、Goose、OpenCode 等支援 Agent Skills 標準的工具）按 [中文技術表達規範（C01–C24）](skills/simple-english/references/cn-tech-spec.md) 撰寫或改寫中文技術文字。規則目標是讓讀者準確理解資訊、判斷適用條件，並在需要時正確操作：保留事實與邏輯邊界，區分事實、推斷與未知，不補造資訊、命令、路徑或恢復方法，一個概念一個術語，指明執行者、條件先於動作、保護機器可讀內容。
 
-一句话：让 AI 写出能让读者准确执行与判断的中文技术文档的 Agent Skill。
+一句話：讓 AI 寫出能讓讀者準確執行與判斷的中文技術文件的 Agent Skill。
 
-## 适用场景
+## 適用場景
 
-- 代码改动说明：变更事实、验证范围、未做验证。
-- 接口文档与状态消息：不补造字段、状态码、轮询间隔。
-- 操作手册：必要条件与风险先于动作，可观察的判断条件。
-- 排障报告与故障复盘：区分现象、假设、检查、结论。
-- 概念解释：逐步展开，类比必须说明边界。
-- 错误消息与 UI 文字：系统行为不伪装成人工步骤。
+- 程式碼改動說明：變更事實、驗證範圍、未做驗證。
+- 介面文件與狀態訊息：不補造欄位、狀態碼、輪詢間隔。
+- 操作手冊：必要條件與風險先於動作，可觀察的判斷條件。
+- 排障報告與故障覆盤：區分現象、假設、檢查、結論。
+- 概念解釋：逐步展開，類比必須說明邊界。
+- 錯誤訊息與 UI 文字：系統行為不偽裝成人工步驟。
 
-完整规则见 [`skills/simple-english/SKILL.md`](skills/simple-english/SKILL.md)。练习与正反对照见 [`skills/simple-english/references/cn-tech-examples.md`](skills/simple-english/references/cn-tech-examples.md)。
+完整規則見 [`skills/simple-english/SKILL.md`](skills/simple-english/SKILL.md)。練習與正反對照見 [`skills/simple-english/references/cn-tech-examples.md`](skills/simple-english/references/cn-tech-examples.md)。
 
-## 安装
+## 安裝
 
-### 方式一：仅安装 Skill（适用于 Claude Code、Cursor 等）
+### 方式一：僅安裝 Skill（適用於 Claude Code、Cursor 等）
 
 使用 [skills CLI](https://github.com/vercel-labs/skills)：
 
@@ -31,121 +31,121 @@ Simple English 中文版是一个 Agent Skill，让 AI 助手（Claude Code、Cu
 npx skills add TranChinese/SimpleEnglish-zh
 ```
 
-这仅安装 Skill，不安装会话 hook 或输出样式。如果不使用 Claude Code 插件，设置 `outputStyle` 为 `simple-english:simple-english` 无效。
+這僅安裝 Skill，不安裝會話 hook 或輸出樣式。如果不使用 Claude Code 外掛，設定 `outputStyle` 為 `simple-english:simple-english` 無效。
 
-### 方式二：安装 Claude Code 插件（含会话 hook 和输出样式）
+### 方式二：安裝 Claude Code 外掛（含會話 hook 和輸出樣式）
 
 ```bash
 claude plugin marketplace add TranChinese/SimpleEnglish-zh
 claude plugin install simple-english@simple-english
 ```
 
-输出样式名为 `simple-english:simple-english`。短名称无法解析。在 `/config` 的 Output style 下选择，或在 `~/.claude/settings.json` 中添加 `{"outputStyle": "simple-english:simple-english"}`。
+輸出樣式名為 `simple-english:simple-english`。短名稱無法解析。在 `/config` 的 Output style 下選擇，或在 `~/.claude/settings.json` 中新增 `{"outputStyle": "simple-english:simple-english"}`。
 
-### 方式三：安装 Codex 插件（含会话 hook）
+### 方式三：安裝 Codex 外掛（含會話 hook）
 
 ```bash
 codex plugin marketplace add TranChinese/SimpleEnglish-zh
 codex plugin add simple-english@simple-english
 ```
 
-Codex 首次运行前会询问你是否信任 hook。请打开 `/hooks` 批准。Hook 需要 Node.js。详见 [`src/hooks/README.md`](src/hooks/README.md)。
+Codex 首次執行前會詢問你是否信任 hook。請開啟 `/hooks` 批准。Hook 需要 Node.js。詳見 [`src/hooks/README.md`](src/hooks/README.md)。
 
-### 方式四：无 Skill 支持
+### 方式四：無 Skill 支援
 
-将 [`prompts/system-prompt.md`](prompts/system-prompt.md) 中的规则块粘贴到你的系统提示、`AGENTS.md` 或 `.cursorrules` 中。文件末尾提供了精简版。
+將 [`prompts/system-prompt.md`](prompts/system-prompt.md) 中的規則塊貼上到你的系統提示、`AGENTS.md` 或 `.cursorrules` 中。檔案末尾提供了精簡版。
 
-然后直接提出任何技术写作需求，或说「按中文技术表达规范改写」「用 C01–C24 重写」。
+然後直接提出任何技術寫作需求，或說「按中文技術表達規範改寫」「用 C01–C24 重寫」。
 
 ## 效果示例
 
-左侧是未经处理的真实 Claude 输出。右侧是加载 Skill 后的同一模型输出。
+左側是未經處理的真實 Claude 輸出。右側是載入 Skill 後的同一模型輸出。
 
 | 不使用 Skill | 使用 Skill |
 |---|---|
-| 利用 sqlpipe 的强大架构，用户可以无缝地将 Postgres 表同步到 S3，配置开销极小。开始之前，你应该确保 AWS 凭证已正确配置——这对于避免后续令人沮丧的权限问题至关重要。 | sqlpipe 将 Postgres 表复制到 S3。它需要一个配置文件。开始之前，确认 AWS 凭证正确。如果凭证错误，S3 因权限错误拒绝上传。 |
+| 利用 sqlpipe 的強大架構，使用者可以無縫地將 Postgres 表同步到 S3，配置開銷極小。開始之前，你應該確保 AWS 憑證已正確配置——這對於避免後續令人沮喪的許可權問題至關重要。 | sqlpipe 將 Postgres 表複製到 S3。它需要一個配置檔案。開始之前，確認 AWS 憑證正確。如果憑證錯誤，S3 因許可權錯誤拒絕上傳。 |
 
-更多重写示例见 [`examples/before-after.md`](examples/before-after.md)：涵盖 README、运维手册、故障报告、错误消息、发布说明等。
+更多重寫示例見 [`examples/before-after.md`](examples/before-after.md)：涵蓋 README、運維手冊、故障報告、錯誤訊息、釋出說明等。
 
-## 规则体系
+## 規則體系
 
-[`SKILL.md`](skills/simple-english/SKILL.md) 中有两套规则：中文文档规则（24 条，C01–C24）+ 中文回复规则（9 条）。完整规则与术语约定在 [`cn-tech-spec.md`](skills/simple-english/references/cn-tech-spec.md)。Issue 9 的 53 条英文 STE 编号规则位于 [`rule-catalog.md`](skills/simple-english/references/rule-catalog.md)，用于英文写作的 Strict 模式。
+[`SKILL.md`](skills/simple-english/SKILL.md) 中有兩套規則：中文文件規則（24 條，C01–C24）+ 中文回覆規則（9 條）。完整規則與術語約定在 [`cn-tech-spec.md`](skills/simple-english/references/cn-tech-spec.md)。Issue 9 的 53 條英文 STE 編號規則位於 [`rule-catalog.md`](skills/simple-english/references/rule-catalog.md)，用於英文寫作的 Strict 模式。
 
-### 中文文档规则（C01–C24，按场景分组）
+### 中文文件規則（C01–C24，按場景分組）
 
-- 正确性与词语（C01–C06）：保留事实边界、区分事实/推断/未知、不补造信息、一个概念一个术语、按语境判断词义、保留并解释专业术语。
-- 句子与关系（C07–C12）：指明执行者、一句一个关系、写清逻辑、明确否定、拆开长定语、用具体动作词。
-- 概念解释（C13–C16）：从读者问题展开、每段一主题、类比说明边界、区分改变与证据。
-- 操作说明（C17–C20）：必要条件与风险先于动作、一步一操作、可观察判断条件、具体风险提示。
-- 故障排查（C21–C22）：区分现象假设检查结论、优先低风险检查。
-- 格式与交付（C23–C24）：保护机器可读内容、复查语义与任务可用性。
+- 正確性與詞語（C01–C06）：保留事實邊界、區分事實/推斷/未知、不補造資訊、一個概念一個術語、按語境判斷詞義、保留並解釋專業術語。
+- 句子與關係（C07–C12）：指明執行者、一句一個關係、寫清邏輯、明確否定、拆開長定語、用具體動作詞。
+- 概念解釋（C13–C16）：從讀者問題展開、每段一主題、類比說明邊界、區分改變與證據。
+- 操作說明（C17–C20）：必要條件與風險先於動作、一步一操作、可觀察判斷條件、具體風險提示。
+- 故障排查（C21–C22）：區分現象假設檢查結論、優先低風險檢查。
+- 格式與交付（C23–C24）：保護機器可讀內容、複查語義與任務可用性。
 
-### 中文回复规则
+### 中文回覆規則
 
-| 规则 | 消除内容 |
+| 規則 | 消除內容 |
 |---|---|
-| 答案或结果放第一句 | 「好的」「当然」「好问题」 |
-| 用散文，不用标题/项目符号/加粗/表格 | 一句话答案周围堆积的格式 |
-| 术语首次出现用几个词解释 | 读者必须查的行话 |
-| 不补造未知信息与恢复方法 | AI 幻觉 |
-| 不引用开场白与结束语 | 「希望有帮助」「如有需要再问」 |
-| 条件与必要前提放动作前 | 读者执行时太晚才读到的条件 |
+| 答案或結果放第一句 | 「好的」「當然」「好問題」 |
+| 用散文，不用標題/專案符號/加粗/表格 | 一句話答案周圍堆積的格式 |
+| 術語首次出現用幾個詞解釋 | 讀者必須查的行話 |
+| 不補造未知資訊與恢復方法 | AI 幻覺 |
+| 不引用開場白與結束語 | 「希望有幫助」「如有需要再問」 |
+| 條件與必要前提放動作前 | 讀者執行時太晚才讀到的條件 |
 
 ### 英文模式
 
-当用户明确要求英文并提到 ASD-STE100、STE、Simplified Technical English 或合规时启用。规则见 [`strict-vocabulary.md`](skills/simple-english/references/strict-vocabulary.md) 与 [`rule-catalog.md`](skills/simple-english/references/rule-catalog.md)。
+當使用者明確要求英文並提到 ASD-STE100、STE、Simplified Technical English 或合規時啟用。規則見 [`strict-vocabulary.md`](skills/simple-english/references/strict-vocabulary.md) 與 [`rule-catalog.md`](skills/simple-english/references/rule-catalog.md)。
 
-## 基准测试
+## 基準測試
 
-下方每个数字都由 `python3 evals/check_numbers.py` 从已提交的原始文件重新计算，CI 在每次推送时运行。所有 Claude 运行：claude-sonnet-4-6，low effort，不加载设置。评判模型是 Claude text 上的 Claude 模型，因此可能存在家族偏见。
+下方每個數字都由 `python3 evals/check_numbers.py` 從已提交的原始檔案重新計算，CI 在每次推送時執行。所有 Claude 執行：claude-sonnet-4-6，low effort，不載入設定。評判模型是 Claude text 上的 Claude 模型，因此可能存在家族偏見。
 
-**下列数字描述 2.0.1 版本。v2.2.0 未运行基准测试**，因此这些数字不代表中文规则集的效果；中文场景的效果尚未测量。
+**下列數字描述 2.0.1 版本。v2.2.0 未執行基準測試**，因此這些數字不代表中文規則集的效果；中文場景的效果尚未測量。
 
-**回复测试**（8 个含行话术语的聊天问题，两次运行）——与不使用 Skill 相比，2.0.1 减少了 **95% 的可见缺陷**（破折号、加粗、标题、项目符号）：218 → 11。
+**回覆測試**（8 個含行話術語的聊天問題，兩次執行）——與不使用 Skill 相比，2.0.1 減少了 **95% 的可見缺陷**（破折號、加粗、標題、專案符號）：218 → 11。
 
-| 条件 | 词数 | 句子数 | 破折号 | 加粗 | 标题 | 项目符号 |
+| 條件 | 詞數 | 句子數 | 破折號 | 加粗 | 標題 | 專案符號 |
 |---|---:|---:|---:|---:|---:|---:|
-| 无 Skill | 216 | 16.8 | 62 | 79 | 25 | 52 |
+| 無 Skill | 216 | 16.8 | 62 | 79 | 25 | 52 |
 | 2.0.0 | 184 | 14.4 | 43 | 72 | 4 | 52 |
 | 2.0.1 | 146 | 7.9 | 5 | 2 | 0 | 4 |
 
-在 gpt-4.1-mini 上，相同 8 个问题从每 8 条回复 23 个句子、64 个加粗、101 个项目符号。使用 2.0.1 后降至 5.2 个句子，零格式。
+在 gpt-4.1-mini 上，相同 8 個問題從每 8 條回覆 23 個句子、64 個加粗、101 個專案符號。使用 2.0.1 後降至 5.2 個句子，零格式。
 
-**文档测试**（8 个 sqlpipe 写作任务，用 STE linter 评分）——在此模型上每次运行变化约 0.5，请将行视为「持平或更好」，而非排名。
+**文件測試**（8 個 sqlpipe 寫作任務，用 STE linter 評分）——在此模型上每次執行變化約 0.5，請將行視為「持平或更好」，而非排名。
 
-| 条件 | 违规/100词 | 减少幅度 |
+| 條件 | 違規/100詞 | 減少幅度 |
 |---|---:|---:|
-| 无 Skill | 4.09 | |
+| 無 Skill | 4.09 | |
 | 1.3.0 | 2.11 | 48% |
 | 2.0.0 | 1.70 | 58% |
 | 2.0.1 | 0.91 | 78% |
 
-Linter 历史：9 个 Claude 模型（144 次生成）的 linter 违规减少 81.3%。详见 [`evals/results/RESULTS.md`](evals/results/RESULTS.md)。
+Linter 歷史：9 個 Claude 模型（144 次生成）的 linter 違規減少 81.3%。詳見 [`evals/results/RESULTS.md`](evals/results/RESULTS.md)。
 
-## 常见问题
+## 常見問題
 
-**这能让输出获得中文技术表达规范认证吗？** 没有「认证」一说。本规范是独立可执行的规则集，按 C01–C24 自查即可。
+**這能讓輸出獲得中文技術表達規範認證嗎？** 沒有「認證」一說。本規範是獨立可執行的規則集，按 C01–C24 自查即可。
 
-**能让输出获得 STE 认证吗？** 不能。没有任何工具能获得认证，因为 ASD 不对任何工具进行认证。Strict 模式最接近。逐词的裁定见官方标准（[免费下载](https://www.asd-ste100.org/request.html)）。
+**能讓輸出獲得 STE 認證嗎？** 不能。沒有任何工具能獲得認證，因為 ASD 不對任何工具進行認證。Strict 模式最接近。逐詞的裁定見官方標準（[免費下載](https://www.asd-ste100.org/request.html)）。
 
-**我的文档会听起来像机器人吗？** 中文文档规则要求保真与明确执行者，因此听起来更像工程手册：平淡但不可能被误读。博客文章请保持你的文风。
+**我的文件會聽起來像機器人嗎？** 中文文件規則要求保真與明確執行者，因此聽起來更像工程手冊：平淡但不可能被誤讀。部落格文章請保持你的文風。
 
-**为什么不直接提示「写得清楚点」？** 「清楚」是一种观点。「不补造恢复步骤」「不把系统行为写成人工步骤」「C23 保护机器可读内容」是规格。Agent 遵循规格。
+**為什麼不直接提示「寫得清楚點」？** 「清楚」是一種觀點。「不補造恢復步驟」「不把系統行為寫成人工步驟」「C23 保護機器可讀內容」是規格。Agent 遵循規格。
 
-**与 1.x 系列的关系？** v2.0 起默认采用 Plain 模式（响应域外读者）。v2.2.0 起中文场景默认采用中文技术表达规范 C01–C24；英文模式仍保留 ASD-STE100。
+**與 1.x 系列的關係？** v2.0 起預設採用 Plain 模式（響應域外讀者）。v2.2.0 起中文場景預設採用中文技術表達規範 C01–C24；英文模式仍保留 ASD-STE100。
 
-**词表检查器在哪里？** `evals/ste_lint.py` 测量机械规则，看不到词汇选择。[`tools/ste-dictionary/`](tools/ste-dictionary/README.md) 包含一个提取器，从你自己的免费 Issue 9 PDF 副本构建英文 STE 词表。Linter 读取这些词表。仓库附带工具，不附带词典内容，因为标准禁止在未经 ASD 书面授权的情况下复制。
+**詞表檢查器在哪裡？** `evals/ste_lint.py` 測量機械規則，看不到詞彙選擇。[`tools/ste-dictionary/`](tools/ste-dictionary/README.md) 包含一個提取器，從你自己的免費 Issue 9 PDF 副本構建英文 STE 詞表。Linter 讀取這些詞表。倉庫附帶工具，不附帶詞典內容，因為標準禁止在未經 ASD 書面授權的情況下複製。
 
-## 贡献
+## 貢獻
 
-欢迎提交 Issue 提问和报告 Bug。Pull request 欢迎。改变已发布数字的更改必须附带原始文件，且 `python3 evals/check_numbers.py` 必须通过。在推送前运行 `python3 evals/ste_lint.py --self-test`。在 PR 中说明 Agent 是否写了代码，不要添加归属 trailers。
+歡迎提交 Issue 提問和報告 Bug。Pull request 歡迎。改變已釋出數字的更改必須附帶原始檔案，且 `python3 evals/check_numbers.py` 必須透過。在推送前執行 `python3 evals/ste_lint.py --self-test`。在 PR 中說明 Agent 是否寫了程式碼，不要新增歸屬 trailers。
 
-推送前运行 `bash scripts/check.sh`，跑过本仓库的七个本地检查（与原 CI 一致）。CI 流程文件未随仓库发布，因为 GitHub 要求 Personal Access Token 具备 `workflow` 作用域才能推送。
+推送前執行 `bash scripts/check.sh`，跑過本倉庫的七個本地檢查（與原 CI 一致）。CI 流程檔案未隨倉庫釋出，因為 GitHub 要求 Personal Access Token 具備 `workflow` 作用域才能推送。
 
-## 许可证
+## 許可證
 
-MIT 许可证。本仓库为教学目的复述规则，不复制任何规范文本或词典内容。
+MIT 許可證。本倉庫為教學目的複述規則，不復制任何規範文字或詞典內容。
 
-**非官方翻译项目**，与 ASD 或 STEMG 无关联。ASD-STE100 是 ASD 的注册商标。中文字面引用按「合理使用」注明来源；不在产品中再分发原始 Subtitle 数据。
+**非官方翻譯專案**，與 ASD 或 STEMG 無關聯。ASD-STE100 是 ASD 的註冊商標。中文字面引用按「合理使用」註明來源；不在產品中再分發原始 Subtitle 資料。
 
-<!-- 来源：E:\ChromeDownload\中文技术表达规范.pdf_by_PaddleOCR-VL-1.6.md（C01–C24 + 第 27 节精简指令） -->
+<!-- 來源：E:\ChromeDownload\中文技術表達規範.pdf_by_PaddleOCR-VL-1.6.md（C01–C24 + 第 27 節精簡指令） -->

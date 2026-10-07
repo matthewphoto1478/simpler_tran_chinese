@@ -1,7 +1,7 @@
-# .agents/plugins 目录
+# .agents/plugins 目錄
 
-此目录用于 Agent Skills 市场目录配置。
+此目錄用於 Agent Skills 市場目錄配置。
 
-占位目录，存放插件市场配置文件。
+佔位目錄，存放外掛市場配置檔案。
 
 <!-- 原文：https://github.com/AminBlg/SimpleEnglish/blob/main/.agents/plugins -->

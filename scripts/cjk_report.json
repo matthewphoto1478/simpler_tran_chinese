@@ -1,42 +1,42 @@
 {
-  "files_analyzed": 36,
+  "files_analyzed": 40,
   "files_with_cjk": 31,
-  "total_cjk_chars": 19022,
-  "total_changed_by_s2t": 7190,
-  "total_changed_by_t2s": 0,
-  "s2t_pct": 37.798,
-  "t2s_pct": 0.0,
+  "total_cjk_chars": 19101,
+  "total_changed_by_s2t": 4,
+  "total_changed_by_t2s": 7260,
+  "s2t_pct": 0.021,
+  "t2s_pct": 38.008,
   "files_by_verdict": {
-    "Traditional": 31,
-    "no CJK": 5
+    "Simplified": 31,
+    "no CJK": 9
   },
   "files": [
     {
       "file": ".agents/plugins/README.md",
       "cjk": 29,
-      "s2t_changed": 8,
-      "t2s_changed": 0,
-      "s2t_pct": 27.59,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 10,
+      "s2t_pct": 0.0,
+      "t2s_pct": 34.48,
+      "verdict": "Simplified"
     },
     {
       "file": ".claude-plugin/marketplace.json",
-      "cjk": 111,
-      "s2t_changed": 43,
-      "t2s_changed": 0,
-      "s2t_pct": 38.74,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "cjk": 112,
+      "s2t_changed": 0,
+      "t2s_changed": 44,
+      "s2t_pct": 0.0,
+      "t2s_pct": 39.29,
+      "verdict": "Simplified"
     },
     {
       "file": ".claude-plugin/plugin.json",
       "cjk": 72,
-      "s2t_changed": 28,
-      "t2s_changed": 0,
-      "s2t_pct": 38.89,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 30,
+      "s2t_pct": 0.0,
+      "t2s_pct": 41.67,
+      "verdict": "Simplified"
     },
     {
       "file": ".codex-plugin/hooks.json",
@@ -48,29 +48,29 @@
     {
       "file": ".codex-plugin/plugin.json",
       "cjk": 202,
-      "s2t_changed": 81,
-      "t2s_changed": 0,
-      "s2t_pct": 40.1,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 82,
+      "s2t_pct": 0.0,
+      "t2s_pct": 40.59,
+      "verdict": "Simplified"
     },
     {
       "file": "CHANGELOG.md",
-      "cjk": 1090,
-      "s2t_changed": 365,
-      "t2s_changed": 0,
-      "s2t_pct": 33.49,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "cjk": 1096,
+      "s2t_changed": 0,
+      "t2s_changed": 371,
+      "s2t_pct": 0.0,
+      "t2s_pct": 33.85,
+      "verdict": "Simplified"
     },
     {
       "file": "evals/pressure-tests.md",
-      "cjk": 713,
-      "s2t_changed": 298,
-      "t2s_changed": 0,
-      "s2t_pct": 41.8,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "cjk": 714,
+      "s2t_changed": 0,
+      "t2s_changed": 298,
+      "s2t_pct": 0.0,
+      "t2s_pct": 41.74,
+      "verdict": "Simplified"
     },
     {
       "file": "evals/reply_scenarios.json",
@@ -82,74 +82,74 @@
     {
       "file": "evals/results/openai-2026-09-01/README.md",
       "cjk": 19,
-      "s2t_changed": 9,
-      "t2s_changed": 0,
-      "s2t_pct": 47.37,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 9,
+      "s2t_pct": 0.0,
+      "t2s_pct": 47.37,
+      "verdict": "Simplified"
     },
     {
       "file": "evals/results/opencode-2026-09-01/README.md",
       "cjk": 21,
-      "s2t_changed": 9,
-      "t2s_changed": 0,
-      "s2t_pct": 42.86,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 9,
+      "s2t_pct": 0.0,
+      "t2s_pct": 42.86,
+      "verdict": "Simplified"
     },
     {
       "file": "evals/results/opencode-2026-09-01-plain/README.md",
       "cjk": 19,
-      "s2t_changed": 9,
-      "t2s_changed": 0,
-      "s2t_pct": 47.37,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 9,
+      "s2t_pct": 0.0,
+      "t2s_pct": 47.37,
+      "verdict": "Simplified"
     },
     {
       "file": "evals/results/pi-2026-07-31/README.md",
       "cjk": 19,
-      "s2t_changed": 9,
-      "t2s_changed": 0,
-      "s2t_pct": 47.37,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 9,
+      "s2t_pct": 0.0,
+      "t2s_pct": 47.37,
+      "verdict": "Simplified"
     },
     {
       "file": "evals/results/pivot-2026-09-01/README.md",
       "cjk": 19,
-      "s2t_changed": 9,
-      "t2s_changed": 0,
-      "s2t_pct": 47.37,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 9,
+      "s2t_pct": 0.0,
+      "t2s_pct": 47.37,
+      "verdict": "Simplified"
     },
     {
       "file": "evals/results/raw/README.md",
       "cjk": 42,
-      "s2t_changed": 17,
-      "t2s_changed": 0,
-      "s2t_pct": 40.48,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 21,
+      "s2t_pct": 0.0,
+      "t2s_pct": 50.0,
+      "verdict": "Simplified"
     },
     {
       "file": "evals/results/raw-superseded/README.md",
       "cjk": 25,
-      "s2t_changed": 9,
-      "t2s_changed": 0,
-      "s2t_pct": 36.0,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 10,
+      "s2t_pct": 0.0,
+      "t2s_pct": 40.0,
+      "verdict": "Simplified"
     },
     {
       "file": "evals/results/rebuild-2026-09-02/README.md",
       "cjk": 21,
-      "s2t_changed": 9,
-      "t2s_changed": 0,
-      "s2t_pct": 42.86,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 9,
+      "s2t_pct": 0.0,
+      "t2s_pct": 42.86,
+      "verdict": "Simplified"
     },
     {
       "file": "evals/results/results.json",
@@ -161,29 +161,29 @@
     {
       "file": "evals/results/RESULTS.md",
       "cjk": 497,
-      "s2t_changed": 166,
-      "t2s_changed": 0,
-      "s2t_pct": 33.4,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 167,
+      "s2t_pct": 0.0,
+      "t2s_pct": 33.6,
+      "verdict": "Simplified"
     },
     {
       "file": "evals/results/why-useless-2026-09-02/README.md",
       "cjk": 22,
-      "s2t_changed": 9,
-      "t2s_changed": 0,
-      "s2t_pct": 40.91,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 9,
+      "s2t_pct": 0.0,
+      "t2s_pct": 40.91,
+      "verdict": "Simplified"
     },
     {
       "file": "evals/results/WHY-USELESS-2026-09-02.md",
       "cjk": 433,
-      "s2t_changed": 169,
-      "t2s_changed": 0,
-      "s2t_pct": 39.03,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 169,
+      "s2t_pct": 0.0,
+      "t2s_pct": 39.03,
+      "verdict": "Simplified"
     },
     {
       "file": "evals/scenarios.json",
@@ -195,101 +195,129 @@
     {
       "file": "examples/before-after.md",
       "cjk": 164,
-      "s2t_changed": 61,
-      "t2s_changed": 0,
-      "s2t_pct": 37.2,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 61,
+      "s2t_pct": 0.0,
+      "t2s_pct": 37.2,
+      "verdict": "Simplified"
     },
     {
       "file": "output-styles/simple-english.md",
-      "cjk": 978,
-      "s2t_changed": 377,
-      "t2s_changed": 0,
-      "s2t_pct": 38.55,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "cjk": 987,
+      "s2t_changed": 0,
+      "t2s_changed": 381,
+      "s2t_pct": 0.0,
+      "t2s_pct": 38.6,
+      "verdict": "Simplified"
     },
     {
       "file": "prompts/system-prompt.md",
-      "cjk": 1220,
-      "s2t_changed": 481,
-      "t2s_changed": 0,
-      "s2t_pct": 39.43,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "cjk": 1226,
+      "s2t_changed": 0,
+      "t2s_changed": 488,
+      "s2t_pct": 0.0,
+      "t2s_pct": 39.8,
+      "verdict": "Simplified"
     },
     {
       "file": "README.md",
-      "cjk": 1970,
-      "s2t_changed": 778,
+      "cjk": 1978,
+      "s2t_changed": 0,
+      "t2s_changed": 790,
+      "s2t_pct": 0.0,
+      "t2s_pct": 39.94,
+      "verdict": "Simplified"
+    },
+    {
+      "file": "scripts/cjk_after.json",
+      "cjk": 0,
+      "s2t_changed": 0,
       "t2s_changed": 0,
-      "s2t_pct": 39.49,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "verdict": "no CJK"
+    },
+    {
+      "file": "scripts/cjk_before.json",
+      "cjk": 0,
+      "s2t_changed": 0,
+      "t2s_changed": 0,
+      "verdict": "no CJK"
+    },
+    {
+      "file": "scripts/cjk_report.json",
+      "cjk": 0,
+      "s2t_changed": 0,
+      "t2s_changed": 0,
+      "verdict": "no CJK"
+    },
+    {
+      "file": "scripts/cjk_table.txt",
+      "cjk": 0,
+      "s2t_changed": 0,
+      "t2s_changed": 0,
+      "verdict": "no CJK"
     },
     {
       "file": "skills/simple-english/references/cn-tech-examples.md",
-      "cjk": 2072,
-      "s2t_changed": 783,
-      "t2s_changed": 0,
-      "s2t_pct": 37.79,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "cjk": 2080,
+      "s2t_changed": 2,
+      "t2s_changed": 782,
+      "s2t_pct": 0.1,
+      "t2s_pct": 37.6,
+      "verdict": "Simplified"
     },
     {
       "file": "skills/simple-english/references/cn-tech-spec.md",
-      "cjk": 2381,
-      "s2t_changed": 914,
-      "t2s_changed": 0,
-      "s2t_pct": 38.39,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "cjk": 2391,
+      "s2t_changed": 1,
+      "t2s_changed": 908,
+      "s2t_pct": 0.04,
+      "t2s_pct": 37.98,
+      "verdict": "Simplified"
     },
     {
       "file": "skills/simple-english/references/rule-catalog.md",
-      "cjk": 1668,
-      "s2t_changed": 631,
-      "t2s_changed": 0,
-      "s2t_pct": 37.83,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "cjk": 1670,
+      "s2t_changed": 0,
+      "t2s_changed": 649,
+      "s2t_pct": 0.0,
+      "t2s_pct": 38.86,
+      "verdict": "Simplified"
     },
     {
       "file": "skills/simple-english/references/strict-vocabulary.md",
-      "cjk": 817,
-      "s2t_changed": 287,
-      "t2s_changed": 0,
-      "s2t_pct": 35.13,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "cjk": 820,
+      "s2t_changed": 1,
+      "t2s_changed": 290,
+      "s2t_pct": 0.12,
+      "t2s_pct": 35.37,
+      "verdict": "Simplified"
     },
     {
       "file": "skills/simple-english/references/use-cases.md",
-      "cjk": 662,
-      "s2t_changed": 228,
-      "t2s_changed": 0,
-      "s2t_pct": 34.44,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "cjk": 663,
+      "s2t_changed": 0,
+      "t2s_changed": 229,
+      "s2t_pct": 0.0,
+      "t2s_pct": 34.54,
+      "verdict": "Simplified"
     },
     {
       "file": "skills/simple-english/references/word-swaps.md",
       "cjk": 162,
-      "s2t_changed": 63,
-      "t2s_changed": 0,
-      "s2t_pct": 38.89,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 63,
+      "s2t_pct": 0.0,
+      "t2s_pct": 38.89,
+      "verdict": "Simplified"
     },
     {
       "file": "skills/simple-english/SKILL.md",
-      "cjk": 2393,
-      "s2t_changed": 946,
-      "t2s_changed": 0,
-      "s2t_pct": 39.53,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "cjk": 2414,
+      "s2t_changed": 0,
+      "t2s_changed": 940,
+      "s2t_pct": 0.0,
+      "t2s_pct": 38.94,
+      "verdict": "Simplified"
     },
     {
       "file": "src/hooks/package.json",
@@ -300,30 +328,30 @@
     },
     {
       "file": "src/hooks/README.md",
-      "cjk": 624,
-      "s2t_changed": 228,
-      "t2s_changed": 0,
-      "s2t_pct": 36.54,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "cjk": 626,
+      "s2t_changed": 0,
+      "t2s_changed": 244,
+      "s2t_pct": 0.0,
+      "t2s_pct": 38.98,
+      "verdict": "Simplified"
     },
     {
       "file": "tools/ste-dictionary/COMPRESSION-RESEARCH.md",
       "cjk": 258,
-      "s2t_changed": 69,
-      "t2s_changed": 0,
-      "s2t_pct": 26.74,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "s2t_changed": 0,
+      "t2s_changed": 72,
+      "s2t_pct": 0.0,
+      "t2s_pct": 27.91,
+      "verdict": "Simplified"
     },
     {
       "file": "tools/ste-dictionary/README.md",
-      "cjk": 299,
-      "s2t_changed": 97,
-      "t2s_changed": 0,
-      "s2t_pct": 32.44,
-      "t2s_pct": 0.0,
-      "verdict": "Traditional"
+      "cjk": 300,
+      "s2t_changed": 0,
+      "t2s_changed": 98,
+      "s2t_pct": 0.0,
+      "t2s_pct": 32.67,
+      "verdict": "Simplified"
     }
   ]
 }
