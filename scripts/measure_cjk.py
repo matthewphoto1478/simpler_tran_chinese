@@ -3,15 +3,23 @@ Measure whether the prose in the repo is Simplified or Traditional Chinese.
 
 Method: take every Chinese character in each file. Run OpenCC s2t and t2s.
 For each conversion, count how many original characters were *changed* by the
-converter. The language with fewer changes is the one the file is closer to.
+converter.
+
+Interpretation:
+  - `s2t` rewrites many chars -> it found Simplified forms and promoted them.
+    The source was Simplified.
+  - `t2s` rewrites many chars -> it found Traditional forms and simplified them.
+    The source was Traditional.
+  - The "winner" is whichever converter did *more* work.
 
 Why not byte-length diff: OpenCC preserves some characters in either
 direction (punctuation, ASCII, characters that happen to be identical), and
 length-based diff is noisy. Counting *replaced* CJK code points is exact.
 
-If s2t changes very few and t2s changes many -> the file is Simplified.
-If t2s changes very few and s2t changes many -> the file is Traditional.
-If both change similar amounts -> mixed / ambiguous.
+A file is "Traditional" if t2s changes more than s2t (the converter
+found Traditional forms to simplify). It is "Simplified" if s2t changes
+more (the converter found Simplified forms to traditionalise). When the
+two are close, the file is mixed or ambiguous.
 """
 import os, sys, json, subprocess
 from pathlib import Path
@@ -67,9 +75,11 @@ def main():
         n = len(chars)
         if s2t_changed == t2s_changed:
             verdict = 'mixed or ambiguous'
-        elif s2t_changed < t2s_changed:
+        elif s2t_changed > t2s_changed:
+            # s2t did more rewriting -> it found Simplified forms to promote.
             verdict = 'Simplified'
         else:
+            # t2s did more rewriting -> it found Traditional forms to simplify.
             verdict = 'Traditional'
         rows.append({
             'file': rel,

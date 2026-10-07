@@ -1,5 +1,5 @@
 {
-  "files_analyzed": 40,
+  "files_analyzed": 38,
   "files_with_cjk": 31,
   "total_cjk_chars": 19101,
   "total_changed_by_s2t": 4,
@@ -7,8 +7,8 @@
   "s2t_pct": 0.021,
   "t2s_pct": 38.008,
   "files_by_verdict": {
-    "Simplified": 31,
-    "no CJK": 9
+    "Traditional": 31,
+    "no CJK": 7
   },
   "files": [
     {
@@ -18,7 +18,7 @@
       "t2s_changed": 10,
       "s2t_pct": 0.0,
       "t2s_pct": 34.48,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": ".claude-plugin/marketplace.json",
@@ -27,7 +27,7 @@
       "t2s_changed": 44,
       "s2t_pct": 0.0,
       "t2s_pct": 39.29,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": ".claude-plugin/plugin.json",
@@ -36,7 +36,7 @@
       "t2s_changed": 30,
       "s2t_pct": 0.0,
       "t2s_pct": 41.67,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": ".codex-plugin/hooks.json",
@@ -52,7 +52,7 @@
       "t2s_changed": 82,
       "s2t_pct": 0.0,
       "t2s_pct": 40.59,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "CHANGELOG.md",
@@ -61,7 +61,7 @@
       "t2s_changed": 371,
       "s2t_pct": 0.0,
       "t2s_pct": 33.85,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "evals/pressure-tests.md",
@@ -70,7 +70,7 @@
       "t2s_changed": 298,
       "s2t_pct": 0.0,
       "t2s_pct": 41.74,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "evals/reply_scenarios.json",
@@ -86,7 +86,7 @@
       "t2s_changed": 9,
       "s2t_pct": 0.0,
       "t2s_pct": 47.37,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "evals/results/opencode-2026-09-01/README.md",
@@ -95,7 +95,7 @@
       "t2s_changed": 9,
       "s2t_pct": 0.0,
       "t2s_pct": 42.86,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "evals/results/opencode-2026-09-01-plain/README.md",
@@ -104,7 +104,7 @@
       "t2s_changed": 9,
       "s2t_pct": 0.0,
       "t2s_pct": 47.37,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "evals/results/pi-2026-07-31/README.md",
@@ -113,7 +113,7 @@
       "t2s_changed": 9,
       "s2t_pct": 0.0,
       "t2s_pct": 47.37,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "evals/results/pivot-2026-09-01/README.md",
@@ -122,7 +122,7 @@
       "t2s_changed": 9,
       "s2t_pct": 0.0,
       "t2s_pct": 47.37,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "evals/results/raw/README.md",
@@ -131,7 +131,7 @@
       "t2s_changed": 21,
       "s2t_pct": 0.0,
       "t2s_pct": 50.0,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "evals/results/raw-superseded/README.md",
@@ -140,7 +140,7 @@
       "t2s_changed": 10,
       "s2t_pct": 0.0,
       "t2s_pct": 40.0,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "evals/results/rebuild-2026-09-02/README.md",
@@ -149,7 +149,7 @@
       "t2s_changed": 9,
       "s2t_pct": 0.0,
       "t2s_pct": 42.86,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "evals/results/results.json",
@@ -165,7 +165,7 @@
       "t2s_changed": 167,
       "s2t_pct": 0.0,
       "t2s_pct": 33.6,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "evals/results/why-useless-2026-09-02/README.md",
@@ -174,7 +174,7 @@
       "t2s_changed": 9,
       "s2t_pct": 0.0,
       "t2s_pct": 40.91,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "evals/results/WHY-USELESS-2026-09-02.md",
@@ -183,7 +183,7 @@
       "t2s_changed": 169,
       "s2t_pct": 0.0,
       "t2s_pct": 39.03,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "evals/scenarios.json",
@@ -199,7 +199,7 @@
       "t2s_changed": 61,
       "s2t_pct": 0.0,
       "t2s_pct": 37.2,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "output-styles/simple-english.md",
@@ -208,7 +208,7 @@
       "t2s_changed": 381,
       "s2t_pct": 0.0,
       "t2s_pct": 38.6,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "prompts/system-prompt.md",
@@ -217,7 +217,7 @@
       "t2s_changed": 488,
       "s2t_pct": 0.0,
       "t2s_pct": 39.8,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "README.md",
@@ -226,21 +226,7 @@
       "t2s_changed": 790,
       "s2t_pct": 0.0,
       "t2s_pct": 39.94,
-      "verdict": "Simplified"
-    },
-    {
-      "file": "scripts/cjk_after.json",
-      "cjk": 0,
-      "s2t_changed": 0,
-      "t2s_changed": 0,
-      "verdict": "no CJK"
-    },
-    {
-      "file": "scripts/cjk_before.json",
-      "cjk": 0,
-      "s2t_changed": 0,
-      "t2s_changed": 0,
-      "verdict": "no CJK"
+      "verdict": "Traditional"
     },
     {
       "file": "scripts/cjk_report.json",
@@ -263,7 +249,7 @@
       "t2s_changed": 782,
       "s2t_pct": 0.1,
       "t2s_pct": 37.6,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "skills/simple-english/references/cn-tech-spec.md",
@@ -272,7 +258,7 @@
       "t2s_changed": 908,
       "s2t_pct": 0.04,
       "t2s_pct": 37.98,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "skills/simple-english/references/rule-catalog.md",
@@ -281,7 +267,7 @@
       "t2s_changed": 649,
       "s2t_pct": 0.0,
       "t2s_pct": 38.86,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "skills/simple-english/references/strict-vocabulary.md",
@@ -290,7 +276,7 @@
       "t2s_changed": 290,
       "s2t_pct": 0.12,
       "t2s_pct": 35.37,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "skills/simple-english/references/use-cases.md",
@@ -299,7 +285,7 @@
       "t2s_changed": 229,
       "s2t_pct": 0.0,
       "t2s_pct": 34.54,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "skills/simple-english/references/word-swaps.md",
@@ -308,7 +294,7 @@
       "t2s_changed": 63,
       "s2t_pct": 0.0,
       "t2s_pct": 38.89,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "skills/simple-english/SKILL.md",
@@ -317,7 +303,7 @@
       "t2s_changed": 940,
       "s2t_pct": 0.0,
       "t2s_pct": 38.94,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "src/hooks/package.json",
@@ -333,7 +319,7 @@
       "t2s_changed": 244,
       "s2t_pct": 0.0,
       "t2s_pct": 38.98,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "tools/ste-dictionary/COMPRESSION-RESEARCH.md",
@@ -342,7 +328,7 @@
       "t2s_changed": 72,
       "s2t_pct": 0.0,
       "t2s_pct": 27.91,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     },
     {
       "file": "tools/ste-dictionary/README.md",
@@ -351,7 +337,7 @@
       "t2s_changed": 98,
       "s2t_pct": 0.0,
       "t2s_pct": 32.67,
-      "verdict": "Simplified"
+      "verdict": "Traditional"
     }
   ]
 }
